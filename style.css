@@ -1,0 +1,13 @@
+body{
+  background-color: lightskyblue;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  background: pink;
+  }
