@@ -1,13 +1,10 @@
-body{
-  background-color: lightskyblue;
+html{
+  font-family: 'Courier Prime', monospace;
+  font-size: 15px;
 }
-
-ul{
-  list-style: none;
-}
-
-a{
-  color: black;
-  text-decoration: none;
-  background: pink;
-  }
+p{
+   color: red;
+   text-decoration: underline;
+   text-align: center;
+   font-size: 20px;
+ }
