@@ -56,7 +56,29 @@ hr{
 
 .five-flowers{
   font-size: 15px;
-  color: rgb(255, 61, 253);
+  color: rgba(255, 122, 238, 0.99);
+}
+
+.left-intro{
+  font-size: 13px;
+  color: rgba(255, 122, 238, 0.99);
+}
+
+.quote{
+  font-size: 11px;
+  font-style: italic;
+  display: inline-block;
+  padding-left:3%;
+  color: rgb(249, 77, 31);
+}
+
+.inline-image{
+  width: 90px;
+}
+
+.inline-image-1{
+  display: inline-block;
+  height: 40px;
 }
 
 .clicker{
@@ -98,10 +120,9 @@ margin-top: 5%;
   width: 18%;
     position: relative;
   top: 40%;
-left: 6%;
   float: left;
   text-align: center;
-  color: rgb(255, 61, 253);
+  color: rgba(255, 122, 238, 0.99);
 }
 
 .clicker:focus + .left{
@@ -125,12 +146,12 @@ display:block;
 .left-image{
   max-width: 100%;
 }
-.f0{color:rgb(255, 61, 253);}
-.f1{color:rgb(255, 61, 253);filter: blur(1px);}
-.f2{color:rgb(255, 61, 253);filter: blur(2px);}
-.f3{color:rgb(255, 61, 253);filter: blur(3px);}
-.f4{color:rgb(255, 61, 253);filter: blur(4px);}
-.f5{color:rgb(255, 61, 253);filter: blur(5px);}
+.f0{color:rgba(255, 122, 238, 0.99);}
+.f1{color:rgba(255, 122, 238, 0.99);filter: blur(1px);}
+.f2{color:rgba(255, 122, 238, 0.99);filter: blur(2px);}
+.f3{color:rgba(255, 122, 238, 0.99);filter: blur(3px);}
+.f4{color:rgba(255, 122, 238, 0.99);filter: blur(4px);}
+.f5{color:rgba(255, 122, 238, 0.99);filter: blur(5px);}
 
 .center-clicker{
     display: block;
@@ -169,7 +190,7 @@ display:block;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    height: 30%;
+    height: 70%;
     border: 2px;
     background-color: rgba(255,255,255,0.9);
     /*border: 1.5px solid red;*/
@@ -191,8 +212,8 @@ display:block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 30%;
+    width: 50.1%;
+    height: 70.1%;
     border: 2px;
     overflow: scroll;
     -webkit-animation: blur-box 4s ease infinite;
@@ -221,4 +242,10 @@ display:block;
   bottom: 40px;
   right:60px;
   -webkit-animation: scale 2s ease infinite;
+}
+
+.bottom{
+  display: inline-block;
+  height: 50px;
+  margin-bottom: 20px;
 }
