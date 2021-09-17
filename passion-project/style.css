@@ -156,10 +156,9 @@ display:block;
 .center-heart{
   display: block;
   position: absolute;
-  top: 70%;
-  left: 65%;
-  transform: scale(50%)
- rotate(10deg);
+
+  transform: scale(60%)
+ rotate(15deg);
   color:rgba(255, 122, 238, 0.99);
   text-decoration: none;
   font-size: 6px;
