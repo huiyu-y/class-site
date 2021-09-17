@@ -1,137 +1,152 @@
-html{
+html {
   font-family: 'Courier Prime', monospace;
   font-size: 13px;
   color: red;
   margin: 40px;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-ul{
-  color:red;
-  list-style:none;
+ul {
+  color: red;
+  list-style: none;
 }
 
 @-webkit-keyframes scale {
-  0%, 100% {transform: scaleX(110%);}
-  50% {transform: scaleX(100%);}
+  0%, 100% {
+    transform: scaleX(110%);
+  }
+
+  50% {
+    transform: scaleX(100%);
+  }
 }
 
 @-webkit-keyframes blur {
-  0%, 100%  { -webkit-filter: blur(1px); }
-  50% { -webkit-filter: blur(3px); }
+  0%, 100% {
+    -webkit-filter: blur(1px);
+  }
+
+  50% {
+    -webkit-filter: blur(3px);
+  }
 }
 
 @-webkit-keyframes blur-box {
-  0%, 100%  { -webkit-filter: blur(1px); }
-  50% { -webkit-filter: blur(5px); }
+  0%, 100% {
+    -webkit-filter: blur(1px);
+  }
+
+  50% {
+    -webkit-filter: blur(5px);
+  }
 }
 
-h1{
+h1 {
   display: inline;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-
 }
 
-h2{
+h2 {
   font-size: 13px;
   font-style: italic;
 }
 
-hr{
-  display: block; height: 1px;
-  border: 0; border-top: 1px solid rgb(235, 236, 235);
-  margin: 1em 0; padding: 0; }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(235, 236, 235);
+  margin: 1em 0;
+  padding: 0;
+}
 }
 
-.h2-inline{
+.h2-inline {
   font-style: italic;
-  font-weight: bold
-  ;
+  font-weight: bold;
 }
 
-.five-flowers{
+.five-flowers {
   font-size: 15px;
   color: rgba(255, 122, 238, 0.99);
 }
 
-.left-intro{
+.left-intro {
   font-size: 13px;
   color: rgba(255, 122, 238, 0.99);
 }
 
-.quote{
+.quote {
   font-size: 11px;
   font-style: italic;
   display: inline-block;
-  padding-left:3%;
+  padding-left: 3%;
   color: rgb(249, 77, 31);
 }
 
-.inline-image{
-
+.inline-image {
   width: 90px;
 }
 
-.inline-image-1{
+.inline-image-1 {
   display: inline-block;
   height: 40px;
 }
 
-.clicker{
-width:30px;
-height:30px;
-color: red;
-font-style: normal;
-font-size: 30px;
-outline:none;
-cursor:pointer;
--webkit-animation: scale 2s ease infinite;
+.clicker {
+  width: 30px;
+  height: 30px;
+  color: red;
+  font-style: normal;
+  font-size: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-animation: scale 2s ease infinite;
 }
 
-.clicker:hover{
+.clicker:hover {
   -webkit-animation: none;
   transform: scale(130%);
 }
 
-.flower-2{
+.flower-2 {
   display: block;
+  z-index: 111;
   margin-left: 30px;
-  width:50px;
-  height:30px;
+  width: 50px;
+  height: 30px;
   color: red;
   font-style: normal;
   font-size: 25px;
-  outline:none;
-  cursor:pointer;
+  outline: none;
+  cursor: pointer;
   -webkit-animation: scale 2s ease infinite;
 }
 
-.flower-2:hover + .credit{
+.flower-2:hover + .credit {
   display: block;
 }
 
-.credit{
-margin-top: 5%;
+.credit {
+  margin-top: 5%;
   display: none;
+  position: absolute;
   width: 18%;
-    position: relative;
-  top: 40%;
   float: left;
   text-align: center;
   color: red;
+  background-color: hsl(0, 0%, 100%, 0.5);
 }
 
-.clicker:focus + .left{
-display:block;
-}
 
-.left{
-  display:none;
+
+.left {
+  display: none;
   position: absolute;
   z-index: 1111;
   margin-top: 0px;
@@ -143,213 +158,571 @@ display:block;
   height: 560px;
   color: red;
   box-shadow: 1px 3px 10px rgb(214, 214, 214);
-  background-color: hsl(0, 0%, 100%, 0.5) ;
+  background-color: hsl(0, 0%, 100%, 0.7);
 }
 
-.left-image{
+.left-image {
   max-width: 100%;
 }
-.f0{color:rgba(255, 122, 238, 0.99);}
-.f1{color:rgba(255, 122, 238, 0.99);filter: blur(1px);}
-.f2{color:rgba(255, 122, 238, 0.99);filter: blur(2px);}
-.f3{color:rgba(255, 122, 238, 0.99);filter: blur(3px);}
-.f4{color:rgba(255, 122, 238, 0.99);filter: blur(4px);}
-.f5{color:rgba(255, 122, 238, 0.99);filter: blur(5px);}
 
-.center-box{
+.clicker:focus+.left {
+  display: block;
+}
+
+.f0 {
+  color: rgba(255, 122, 238, 0.99);
+}
+
+.f1 {
+  color: rgba(255, 122, 238, 0.99);
+  filter: blur(1px);
+}
+
+.f2 {
+  color: rgba(255, 122, 238, 0.99);
+  filter: blur(2px);
+}
+
+.f3 {
+  color: rgba(255, 122, 238, 0.99);
+  filter: blur(3px);
+}
+
+.f4 {
+  color: rgba(255, 122, 238, 0.99);
+  filter: blur(4px);
+}
+
+.f5 {
+  color: rgba(255, 122, 238, 0.99);
+  filter: blur(5px);
+}
+
+.center-box {
   position: fixed;
   width: 90%;
   height: 80%;
   border: solid 0px;
+  top: 10%;
+  z-index: 1;
 }
 
-.center-1{
+.center-1 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-20%, -50%) rotate(20deg);
+  color: red;
+  text-decoration: none;
+  font-size: 40px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-1 {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  position: absolute;
+}
+
+.center-1:hover+.center-hover-1 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-2 {
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-20%, -50%) rotate(10deg);
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-2 {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-20%, -50%) rotate(10deg);
+  position: absolute;
+}
+
+.center-2:hover+.center-hover-2 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-3 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%) rotate(40deg);
+  color: red;
+  text-decoration: none;
+  font-size: 60px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-3 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  color: red;
+  text-decoration: none;
+  font-size: 60px;
+  position: absolute;
+}
+
+.center-3:hover+.center-hover-3 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-4 {
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  color: red;
+  font-size: 55px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-4 {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  position: absolute;
+}
+
+.center-4:hover+.center-hover-4 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-5 {
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  transform: translate(-50%, -50%) rotate(-40deg);
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-5 {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.center-5:hover+.center-hover-5 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-6 {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  color: red;
+  text-decoration: none;
+  font-size: 25px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-6 {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  position: absolute;
+}
+
+.center-6:hover+.center-hover-6 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-7 {
+  display: block;
+  position: absolute;
+  top: 21%;
+  left: 75%;
+  transform: translate(-50%, -50%) rotate(8deg);
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-7 {
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  transform: translate(-50, 50%) rotate（8deg);
+  position: absolute;
+}
+
+.center-7:hover+.center-hover-7 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-8 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  color: red;
+  text-decoration: none;
+  font-size: 25px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-8 {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  transform: translate(-50, 50%) rotate(8deg);
+  position: absolute;
+}
+
+.center-8:hover+.center-hover-8 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-9 {
+  display: block;
+  position: absolute;
+  top: 12%;
+  left: 85%;
+  transform: translate(-50%, -50%) rotate(12deg);
+  color: red;
+  text-decoration: none;
+  font-size: 35px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-9 {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  transform: translate(-50, 50%) rotate(12deg);
+  position: absolute;
+}
+
+.center-9:hover+.center-hover-9 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-10 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  color: red;
+  text-decoration: none;
+  font-size: 32px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-10 {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translate(-50, -50%) rotate(-12deg);
+  position: absolute;
+}
+
+.center-10:hover+.center-hover-10 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-11 {
+  display: block;
+  position: absolute;
+  top: 43%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  color: red;
+  text-decoration: none;
+  font-size: 42px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-11 {
+  display: none;
+  position: absolute;
+  top: 39%;
+  left: 56%;
+  transform: translate(-50, -50%) rotate(-5deg);
+  position: absolute;
+}
+
+.center-11:hover+.center-hover-11 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-12 {
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  color: rainbow;
+  text-decoration: none;
+  font-size: 42px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-12 {
+  display: none;
+  position: absolute;
+  top: 55%;
+  left: 67%;
+  transform: translate(-50, -50%) rotate(15deg);
+  position: absolute;
+}
+
+.center-12:hover+.center-hover-12 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-13 {
+  display: block;
+  position: absolute;
+  top: 58%;
+  left: 83%;
+  transform: translate(-50%, -50%) rotate(19deg);
+  color: red;
+  text-decoration: none;
+  font-size: 50px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-13 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50, -50%) rotate(5deg);
+  position: absolute;
+}
+
+.center-13:hover+.center-hover-13 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-14 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  color: red;
+  text-decoration: none;
+  font-size: 40px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-14 {
+  display: none;
+  position: absolute;
+  top:35%;
+  left: 30%;
+  transform: translate(-50, -50%) rotate(-10deg);
+  position: absolute;
+}
+
+.center-14:hover+.center-hover-14 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-15 {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  transform: translate(-50%, -50%) rotate(5deg);
+  color: red;
+  text-decoration: none;
+  font-size: 35px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-15 {
+  display: none;
+  position: absolute;
+  top:27%;
+  left: 19%;
+  transform: translate(-50, -50%) rotate(5deg);
+  position: absolute;
+}
+
+.center-15:hover+.center-hover-15 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-16 {
+  display: block;
+  position: absolute;
+  top: 79%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  color: red;
+  text-decoration: none;
+  font-size: 38px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-16 {
+  display: none;
+  position: absolute;
+  top:75%;
+  left: 37%;
+  transform: translate(-50, -50%) rotate(-15deg);
+  position: absolute;
+}
+
+.center-16:hover+.center-hover-16 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-17 {
+  display: block;
+  position: absolute;
+  top: 37%;
+  left: 23%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-17 {
+  display: none;
+  position: absolute;
+  top:88%;
+  left: 25%;
+  transform: translate(-50, -50%) rotate(10deg);
+  position: absolute;
+}
+
+.center-17:hover+.center-hover-17 {
+  display: block;
+  -webkit-animation: none;
+}
+
+.center-18 {
+  display: block;
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+  -webkit-animation: blur 8s ease infinite;
+  position: absolute;
+}
+
+.center-hover-18 {
+  display: none;
+  position: absolute;
+  top:82%;
+  left: 22%;
+  transform: translate(-50, -50%) rotate(-10deg);
+  position: absolute;
+}
+
+.center-18:hover+.center-hover-18 {
+  display: block;
+  -webkit-animation: none;
+}
+
+
+  .hover-obj:hover {
     display: block;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-20%, -50%) rotate(20deg);
-    color:red;
-    text-decoration: none;
-    font-size: 40px;
-    -webkit-animation: blur 8s ease infinite;
-    position: absolute;
   }
 
-.center-1:hover + .center-hover-1{
-  display:block;
-  -webkit-animation:none;
-}
+  .right {
+    position: fixed;
+    z-index: 2;
+    bottom: 40px;
+    right:60px;
+    -webkit-animation: scale 2s ease infinite;
+  }
 
-  .center-hover-1{
-      display: none;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-20%, -50%);
-      position: absolute;
-    }
+  .right:hover + .right-hover {
+    display: block;
+  }
 
-  .center-2{
-      display: block;
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-20%, -50%) rotate(10deg);
-      color:red;
-      text-decoration: none;
-      font-size: 30px;
-      -webkit-animation: blur 8s ease infinite;
-      position: absolute;
-    }
+  .right-hover {
+    display: none;
+    position: fixed;
+    background-color: white;
+    bottom: 40px;
+    right:60px;
+    -webkit-animation: scale 2s ease infinite;
+  }
 
-    .center-2:hover + .center-hover-2{
-      display:block;
-      -webkit-animation:none;
-    }
-
-    .center-hover-2{
-        display: none;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-20%, -50%) rotate(10deg);
-        position: absolute;
-      }
-
-  .center-3{
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 30%;
-      transform: translate(-50%, -50%) rotate(40deg);
-      color:red;
-      text-decoration: none;
-      font-size: 60px;
-      -webkit-animation: blur 8s ease infinite;
-      position: absolute;
-    }
-
-    .center-3:hover + .center-hover-3{
-      display:block;
-      -webkit-animation:none;
-    }
-
-    .center-hover-3{
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%, -50%) rotate(0deg);
-        color:red;
-        text-decoration: none;
-        font-size: 60px;
-        position: absolute;
-      }
-
-    .center-4{
-        display: block;
-        position: absolute;
-        top: 80%;
-        left: 70%;
-        transform: translate(-50%, -50%) rotate(-10deg);
-        color:red;
-        font-size: 55px;
-        -webkit-animation: blur 8s ease infinite;
-        position: absolute;
-      }
-
-      .center-4:hover + .center-hover-4{
-        display:block;
-        -webkit-animation:none;
-      }
-
-      .center-hover-4{
-          display: none;
-          position: absolute;
-          top: 80%;
-          left: 70%;
-          transform: translate(-50%, -50%) rotate(-10deg);
-          position: absolute;
-        }
-
-      .center-5{
-          display: block;
-          position: absolute;
-          top: 80%;
-          left: 90%;
-          transform: translate(-50%, -50%) rotate(-40deg);
-          color:red;
-          text-decoration: none;
-          font-size: 30px;
-          -webkit-animation: blur 8s ease infinite;
-          position: absolute;
-        }
-
-        .center-5:hover + .center-hover-5{
-          display:block;
-          -webkit-animation:none;
-        }
-
-        .center-hover-5{
-            display: none;
-            position: absolute;
-            top: 80%;
-            left: 90%;
-            transform: translate(-50%, -50%);
-            position: absolute;
-          }
-
-        .center-6{
-            display: block;
-            position: absolute;
-            top: 10%;
-            left: 70%;
-            transform: translate(-50%, -50%) rotate(-30deg);
-            color:red;
-            text-decoration: none;
-            font-size: 25px;
-            -webkit-animation: blur 8s ease infinite;
-            position: absolute;
-          }
-
-          .center-6:hover + .center-hover-6{
-            display:block;
-            -webkit-animation:none;
-          }
-
-          .center-hover-6{
-              display: none;
-              position: absolute;
-              top: 10%;
-              left: 70%;
-              transform: translate(-50%, -50%) rotate(-30deg);
-              position: absolute;
-            }
-
-.right{
-  position: fixed;
-  bottom: 40px;
-  right:60px;
-
-  -webkit-animation: scale 2s ease infinite;
-}
-
-.right:hover + .right-hover{
-  display: block;
-}
-
-.right-hover{
-  display: none;
-  position: fixed;
-  background-color: white;
-  bottom: 40px;
-  right:60px;
-  -webkit-animation: scale 2s ease infinite;
-}
-
-.bottom{
-  display: inline-block;
-  height: 50px;
-  margin-bottom: 20px;
-}
+  .bottom {
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 20px;
+  }
