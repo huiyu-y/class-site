@@ -1,0 +1,209 @@
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  margin: 0px;
+  height: 900vh;
+  background: rgb(14,14,15);
+  background: linear-gradient(0deg, rgba(14,14,15,1) 0%, rgba(22,22,22,1) 100%);
+
+}
+
+p{
+  font-weight:bolder;
+  font-size: 20px;
+}
+
+
+.floor-sign{
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 1;
+  width:11%;
+}
+
+.container{
+  z-index: 1;
+  width: 100%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.L{
+  width: 38%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  left: 1%;
+}
+
+.water{
+  width:20%;
+  height: 100%;
+  filter: blur(5px);
+}
+
+.middle{
+  width: 24%;
+  background: rgb(65,65,65);
+background: linear-gradient(90deg, rgba(90,90,90,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 93%, rgba(30,30,30,1) 100%);
+  cursor: grab;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.A{
+  background: rgb(19,19,19);
+  background: linear-gradient(171deg, rgba(19,19,19,1) 0%, rgba(84,84,84,1) 43%, rgba(29,29,29,1) 73%, rgba(25,25,25,1) 100%);  width: 80%;
+  height:4%;
+  animation: elevator 150s linear infinite alternate;
+  border-radius: 3px;
+}
+
+.dot{
+  display: block;
+  width:2%;
+  height: 2%;
+  background: blue;
+margin: : 20%;
+  border-radius: 50%;
+}
+
+.note{
+  animation: position-note 5s linear infinite alternate;
+}
+
+.R{
+  width: 38%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  position: relative;
+  left: -2%;
+}
+
+.glitch{
+  width:13%;
+
+  filter: blur(1px);
+}
+
+
+
+.bg-container{
+  z-index: -1;
+  width: 100%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-right{
+  width: 38%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: column;
+}
+
+.bg-left{
+  width: 38.5%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: column;
+  justify-content: flex-end;
+}
+
+.bg-left-img-{
+  width:100%;
+  animation: blur 11s linear infinite alternate;
+}
+
+.bg-left-img{
+  width:100%;
+  animation: blur 3s linear infinite alternate;
+}
+
+.bg-right{
+  width: 40%;
+  height: 900vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: column;
+  justify-content: flex-start;
+}
+
+.bg-right-img-{
+  width:100%;
+  animation: blur 11s linear infinite alternate;
+}
+
+.bg-left-img{
+  width:100%;
+  animation: blur 3s linear infinite alternate;
+}
+
+.book-content{
+  font-family: serif;
+  position: fixed;
+  color: rgb(76, 83, 99);
+  bottom: 0px;
+  width: 100%;
+  font-size: 9px;
+}
+
+.book-title{
+  font-size: 12px;
+  display: block;
+
+  font-style: italic;
+  color: blue;
+}
+
+.author{
+  font-size: 12px;
+  font-style: none;
+  color: rgb(36, 9, 255);
+}
+
+@keyframes coin-left {
+  from {left: 0}
+  to {left: 100%}
+}
+
+@keyframes elevator {
+  from {transform: translateY(0);}
+  to {transform: translateY(900vh);}
+}
+
+
+@keyframes position {
+  from {transform: translateZ(70%);}
+  to {transform: translateZ(-70%)}
+}
+
+@keyframes blur {
+  from {filter: blur(40px);}
+  to {filter: blur(1px)}
+}
+
+@keyframes position-note {
+  from {transform: translate(0%, 90%);}
+  to {transform: translate(100%, 0%);}
+}
