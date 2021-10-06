@@ -207,6 +207,10 @@ hr {
   z-index: 1;
 }
 
+.number{
+  font-size: 12px;
+}
+
 .center-1 {
   display: block;
   position: absolute;
