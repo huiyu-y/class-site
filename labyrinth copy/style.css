@@ -16,11 +16,11 @@ body {
   height: 100%;
 }
 
-/* #canvas-2{
-  width: 100%;
-  height: 100%;
-  display: none;
-} */
+#container{
+  width: 100vw;
+  height: 100vh;
+}
+
 .canvas {
   position: fixed;
   top: 50%;
@@ -78,6 +78,7 @@ body {
 }
 
 .flight-bottom {
+  display: block;
   position: fixed;
   top: 50%;
   left: 55%;
@@ -162,6 +163,7 @@ body {
 }
 
 .flicker-bottom {
+  display: block;
   position: fixed;
   left: 310px;
   top: 0px;
@@ -177,6 +179,7 @@ body {
 }
 
 #line-bottom {
+  display: block;
   position: absolute;
   height: 1px;
   animation-name: rotate;

@@ -4,6 +4,7 @@
 <head>
   <title>Labyrinth</title>
   <link rel="stylesheet" href="style.css">
+  <link href="jquery.splitter.css" rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="paper-full.min.js"></script>
   <script type="text/paperscript" canvas="canvas-1">
@@ -49,45 +50,6 @@
   }
   </script>
 
-  <!-- <script type="text/paperscript" canvas="canvas-2">
-
-  var points = 40;
-
-  var length = 50;
-
-  var path = new Path({
-    strokeColor: 'rgb(255, 255, 255)',
-    strokeWidth: 1,
-    strokeCap: 'round'
-  });
-
-  var start = view.center / [10, 1];
-  for (var i = 0; i < points; i++)
-    path.add(start + new Point(i * length, 0));
-
-  function onMouseMove(event) {
-    path.firstSegment.point = event.point;
-    for (var i = 0; i < points - 1; i++) {
-      var segment = path.segments[i];
-      var nextSegment = segment.next;
-      var vector = segment.point - nextSegment.point;
-      vector.length = length;
-      nextSegment.point = segment.point - vector;
-    }
-    path.smooth({ type: 'continuous' });
-  }
-
-  function onMouseDown(event) {
-    path.fullySelected = true;
-    path.strokeColor = 'rgb(255, 0, 0)';
-  }
-
-  function onMouseUp(event) {
-    path.fullySelected = false;
-    path.strokeColor = 'rgb(62, 53, 39)';
-  }
-  </script> -->
-
 </head>
 
 <body>
@@ -106,13 +68,16 @@
     <img class="question" src="img/question.png">
   </div>
 
+
+<div id="container">
+
   <!-- section1 -->
   <div class="begin-board">
     <img class="labyrinth" src="img/labyrinth.jpeg">
   </div>
 
   <!-- section2 -->
-  <div class="flight-bottom"><img class="flight-img" src="img/flight-bottom.jpg"></div>
+  <span class="flight-bottom"><img class="flight-img" src="img/flight-bottom.jpg"></span>
 
   <div class="flight-board" id="sky">
 
@@ -133,11 +98,11 @@
   </div>
 
   <!-- section Ric-2 -->
-  <div class="flicker-bottom"></div>
+  <span class="flicker-bottom"></span>
   <div class="flicker"></div>
 
   <!-- section Ric-3 -->
-  <div class="line" id="line-bottom"> </div>
+  <span class="line" id="line-bottom"> </span>
 
   <div class="lines">
     <div class="lines-1">
@@ -998,10 +963,11 @@
   </div>
 
   <div class="a"><span class="a-enlarge"></span></div>
-
+</div>
 
   <script src="jquery-3.6.0.min.js"></script>
   <script src="jquery-ui.min.js"></script>
+  <script src="jquery.splitter.js"></script>
   <script src="functions.js"></script>
 
 </body>

@@ -202,4 +202,3 @@ $(".a").click(function(){
       return speed;
 
   }
-code
