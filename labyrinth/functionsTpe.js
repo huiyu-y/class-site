@@ -1,83 +1,21 @@
-$("#sky").hide();
-$(".flight").hide();
-$(".flight-1").hide();
-$(".flight-bottom").hide();
-$(".taipei-bottom").hide();
-$(".ric-bottom").hide();
+$(".cloud-container").show();
+$("#cloud-bottom").show();
+$("body").css('background', '#cbcbcb');
+
 $(".code").hide();
 $(".flicker").hide();
 $(".flicker-bottom").hide();
-$(".cloud-container").hide();
 $(".face").hide();
 $(".a").hide();
-$("#cloud-bottom").hide();
-$("#enter2").hide();
-
+$(".labyrinth").hide();
 $(".math").hide();
-
-$("#enter1").click(function() {
-  $(".labyrinth").hide();
-  $("#enter1").hide();
-  $("#sky").show();
-  $(".flight").show();
-  $(".flight-bottom").show();
-});
-
-$(".flight-bottom").click(function() {
-  $(".flight-bottom").hide();
-  $(".flight").hide()
-  $(".taipei-bottom").show();
-  $(".ric-bottom").show();
-  $(".flight-1").show();
-  // $("body").css('background', '#161616');
-});
-
-$(".ric-bottom").click(function() {
-  $(".taipei-bottom").hide();
-  $(".ric-bottom").hide();
-  $(".flight-1").hide();
-  $("body").css('background', '#ffffff');
-  $(".code").show();
-});
-
-$(".flower-bottom").mouseover(function() {
-  $(".flower-bottom").css('font-weight', 'bolder');
-  $(".flower-bottom").css('background', 'white');
-
-});
-
-$(".flower-bottom").mouseleave(function() {
-  $(".flower-bottom").css('font-weight', 'normal');
-  $(".flower-bottom").css('background', 'none');
-});
-
-
-$(".flower-bottom").click(function() {
-  $(".code").hide();
-  $(".flower-bottom").hide();
-  $(".flicker").show();
-  $(".flicker-bottom").show();
-});
-
-$(".lines").hide();
-$("#line-bottom").hide();
-
-$(".flicker-bottom").click(function() {
-  $(".flicker").hide();
-  $(".lines").show();
-  $("#line-bottom").show();
-});
-
-$("#line-bottom").click(function() {
-  $(".lines").hide();
-  $(".begin-board").show();
-  $(".code").show();
-  $(".face").css('color', 'rgb(0, 0, 0)');
-  $(".labyrinth").show();
-  $("body").css('background', '#000000');
-  $("#enter2").show();
-  $("body").css('background', '#000000');
-});
+$("#enter2").hide();
+$(".taipei-bottom").hide();
+$(".ric-bottom").hide();
+$(".flight-1").hide();
+$("#sky").hide();
+$(".flight").hide();
+$(".flight-bottom").hide();
 
 
 $(".taipei-bottom").click(function() {
@@ -156,9 +94,77 @@ $(".a").click(function(){
   $(".face-bottom").hide();
 });
 
+$("#enter2").click(function() {
+  $(".labyrinth").hide();
+  $("#enter2").hide();
+  $("#sky").show();
+  $(".flight").show();
+  $(".flight-bottom").show();
+});
 
+$(".flight-bottom").click(function() {
+  $(".flight-bottom").hide();
+  $(".flight").hide()
+  $(".taipei-bottom").show();
+  $(".ric-bottom").show();
+  $(".flight-1").show();
+  // $("body").css('background', '#161616');
+});
 
+$(".flight-bottom").click(function() {
+  $(".flight-bottom").hide();
+  $(".flight").hide()
+  $(".taipei-bottom").show();
+  $(".ric-bottom").show();
+  $(".flight-1").show();
+  // $("body").css('background', '#161616');
+});
 
+$(".ric-bottom").click(function() {
+  $(".taipei-bottom").hide();
+  $(".ric-bottom").hide();
+  $(".flight-1").hide();
+  $("body").css('background', '#ffffff');
+  $(".code").show();
+});
+
+$(".flower-bottom").mouseover(function() {
+  $(".flower-bottom").css('font-weight', 'bolder');
+  $(".flower-bottom").css('background', 'white');
+
+});
+
+$(".flower-bottom").mouseleave(function() {
+  $(".flower-bottom").css('font-weight', 'normal');
+  $(".flower-bottom").css('background', 'none');
+});
+
+$(".flower-bottom").click(function() {
+  $(".code").hide();
+  $(".flower-bottom").hide();
+  $(".flicker").show();
+  $(".flicker-bottom").show();
+});
+
+$(".lines").hide();
+$("#line-bottom").hide();
+
+$(".flicker-bottom").click(function() {
+  $(".flicker").hide();
+  $(".lines").show();
+  $("#line-bottom").show();
+});
+
+$("#line-bottom").click(function() {
+  $(".lines").hide();
+  $(".begin-board").show();
+  $(".code").show();
+  $(".face").css('color', 'rgb(0, 0, 0)');
+  $(".labyrinth").show();
+  $("body").css('background', '#000000');
+  $("#enter2").show();
+  $("body").css('background', '#000000');
+});
 
   $(document).ready(function(){
       animateDiv();
@@ -203,4 +209,3 @@ $(".a").click(function(){
       return speed;
 
   }
-code

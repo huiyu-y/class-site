@@ -1,9 +1,8 @@
-$("#sky").hide();
-$(".flight").hide();
-$(".flight-1").hide();
-$(".flight-bottom").hide();
-$(".taipei-bottom").hide();
-$(".ric-bottom").hide();
+$("#sky").show();
+$(".flight").show();
+$(".flight-bottom").show();
+
+
 $(".code").hide();
 $(".flicker").hide();
 $(".flicker-bottom").hide();
@@ -11,16 +10,12 @@ $(".cloud-container").hide();
 $(".face").hide();
 $(".a").hide();
 $("#cloud-bottom").hide();
-
+$(".labyrinth").hide();
 $(".math").hide();
-
-$("#enter").click(function() {
-  $(".labyrinth").hide();
-  $("#enter").hide();
-  $("#sky").show();
-  $(".flight").show();
-  $(".flight-bottom").show();
-});
+$("#enter2").hide();
+$(".taipei-bottom").hide();
+$(".ric-bottom").hide();
+$(".flight-1").hide();
 
 $(".flight-bottom").click(function() {
   $(".flight-bottom").hide();
@@ -74,7 +69,7 @@ $("#line-bottom").click(function() {
   $(".face").css('color', 'rgb(0, 0, 0)');
   $(".labyrinth").show();
   $("body").css('background', '#000000');
-  $("#enter").show();
+  $("#enter2").show();
   $("body").css('background', '#000000');
 });
 
@@ -151,11 +146,26 @@ $(".a").click(function(){
   $(".face").css('color', 'rgb(0, 0, 0)');
   $(".labyrinth").show();
   $("body").css('background', '#000000');
-  $("#enter").show();
+  $("#enter2").show();
   $(".face-bottom").hide();
 });
 
+$("#enter2").click(function() {
+  $(".labyrinth").hide();
+  $("#enter2").hide();
+  $("#sky").show();
+  $(".flight").show();
+  $(".flight-bottom").show();
+});
 
+$(".flight-bottom").click(function() {
+  $(".flight-bottom").hide();
+  $(".flight").hide()
+  $(".taipei-bottom").show();
+  $(".ric-bottom").show();
+  $(".flight-1").show();
+  // $("body").css('background', '#161616');
+});
 
 
 
