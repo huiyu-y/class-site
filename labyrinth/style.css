@@ -16,6 +16,7 @@ a{
   text-decoration: none;
 }
 
+
 #canvas-1 {
   width: 100%;
   height: 100%;
@@ -116,6 +117,7 @@ a{
   position: absolute;
   left: 30%;
   width: 60%;
+  min-width: 300px;
   position: relative;
   align-self: center;
   animation-name: rotate;
@@ -127,6 +129,7 @@ a{
 .taipei-bottom {
   position: fixed;
   width: 15%;
+  min-width: 150px;
   top: 15%;
   left: 0%;
   z-index: 1000;
@@ -137,7 +140,8 @@ a{
   position: fixed;
   bottom: -5%;
   right: 0%;
-  width: 15%;
+  width: 12%;
+  min-width: 120px;
   transform: rotate(-25deg);
   z-index: 1000;
   cursor: help;
